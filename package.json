@@ -39,12 +39,12 @@
     "eslint": "3.11.0",
     "istanbul": "1.0.0-alpha.2",
     "mocha": "3.2.0",
-    "npm-watch": "0.1.6",
-    "sinon": "1.17.7",
+    "npm-watch": "0.1.7",
+    "sinon": "1.17.6",
     "sinon-chai": "2.8.0"
   },
   "dependencies": {
-    "bluebird": "3.4.6",
+    "bluebird": "3.4.7",
     "tractor-config-loader": "0.1.0",
     "tractor-error-handler": "0.1.0"
   }
