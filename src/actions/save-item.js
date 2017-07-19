@@ -37,4 +37,3 @@ export function createSaveItemHandler (fileStructure) {
         .catch(() => handleError(response, new TractorError(`Could not save "${itemPath}"`)));
     }
 }
-createSaveItemHandler['@Inject'] = ['fileStructure'];
