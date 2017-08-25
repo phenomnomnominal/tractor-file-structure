@@ -1,5 +1,5 @@
 // Constants:
-const EXTENSION_MATCH_REGEX = /[^\.]*(\..*)?/;
+const EXTENSION_MATCH_REGEX = /[^.]*(\..*)?/;
 const ITEM_NOT_FOUND_STATUS = 404;
 const OKAY_STATUS = 200;
 

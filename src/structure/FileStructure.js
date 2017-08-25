@@ -1,5 +1,5 @@
 // Constants:
-const DOT_FILE_REGEX = /(^|[\/\\])\../;
+const DOT_FILE_REGEX = /(^|[/\\])\../;
 
 // Utilities:
 import chokidar from 'chokidar';

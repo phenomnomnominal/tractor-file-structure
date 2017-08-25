@@ -229,11 +229,12 @@ describe('tractor-file-structure - Directory:', () => {
             let fileStructure = new FileStructure(path.join(path.sep, 'file-structure'));
             let directory = new Directory(path.join(path.sep, 'file-structure', 'directory'), fileStructure);
 
-            sinon.stub(fs, 'rmdirAsync').returns(Promise.reject(new Error('Unexpected error')));
+            let error = new Error('Unexpected error')
+            sinon.stub(fs, 'rmdirAsync').returns(Promise.reject(error));
 
             return directory.cleanup()
             .catch(e => {
-                expect(e).to.deep.equal(new Error('Unexpected error'));
+                expect(e).to.equal(error);
             })
             .finally(() => {
                 fs.rmdirAsync.restore();
